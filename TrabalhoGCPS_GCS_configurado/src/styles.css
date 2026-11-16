@@ -1,0 +1,28 @@
+:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background:#f4f7f4; color:#132e29; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+.shell { max-width: 1060px; margin: auto; padding: 0 22px; }
+.hero { background: radial-gradient(circle at top right, #3a8572 0%, #134f46 45%, #10342f 100%); color:#fff; padding: 58px 0 72px; }
+.hero h1 { max-width: 720px; font-weight: 760; line-height: 1.1; font-size: clamp(2.35rem,5vw,4.6rem); letter-spacing: -0.04em; margin: 14px 0 18px; }
+.hero p { max-width: 670px; color: #d8eee5; line-height: 1.7; font-size:1.08rem; }
+.eyebrow,.small-heading { letter-spacing: .13em; font-size: .76rem; font-weight:700; text-transform: uppercase; }
+.eyebrow { color:#c9f2cd; }
+.ghost { display:inline-block; text-decoration:none; color:#10342f; background:#efffe8; font-weight:700; padding:13px 18px; border-radius: 10px; margin-top: 14px; }
+.catalogo { padding: 45px 0 70px; }
+.heading { display:flex; justify-content:space-between; align-items:end; gap:20px; }
+.heading h2 { font-size:2rem; margin:8px 0 18px; letter-spacing: -.035em; }
+.small-heading { color:#4d7f73; }
+.heading label { color:#506e65; font-size:.85rem; padding-bottom: 23px; }
+#busca { width:100%; border:1px solid #c3d2ca; border-radius:12px; background:white; padding:17px 20px; font:inherit; box-shadow:0 4px 16px rgba(9,38,26,.04); }
+#busca:focus-visible { outline:3px solid #80cba7; outline-offset:2px; }
+.contador { margin:22px 0; color:#57776e; font-size:.9rem; }
+.grade { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.card { min-height:242px; background:white; border:1px solid #d8e2da; border-radius:16px; padding:24px; display:flex; flex-direction:column; box-shadow:0 8px 24px rgba(6,42,27,.035); }
+.card .category { font-weight:700; text-transform:uppercase; letter-spacing:.09em; font-size:.73rem; color:#2b8068; }
+.card h3 { font-size:1.25rem; margin:14px 0 10px; }
+.card p { color:#4c6860; line-height:1.6; margin:0; }
+.card .local { margin-top:auto; padding-top:18px; font-size:.86rem; font-weight:650; }
+.no-results { grid-column:1/-1; background:white; padding:24px; border-radius:12px; }
+.rodape { padding-bottom:30px; font-size:.8rem; color:#617a70; }
+@media (max-width:780px) { .grade{grid-template-columns:1fr 1fr;} .heading{display:block;} .heading label{display:block; padding:0 0 18px;} }
+@media (max-width:540px) { .hero{padding:36px 0 48px;} .grade{grid-template-columns:1fr;} .card{min-height:210px;} }
